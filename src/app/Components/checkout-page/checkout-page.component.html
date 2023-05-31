@@ -1,0 +1,23 @@
+
+<div class="container">
+    <h1>Items Added to the CheckOut Page</h1>
+    <div class="row" *ngFor="let selected of selectedItem">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body" >
+                <img src="{{ selected.image }}" alt="{{ selected.itemname }}" class="img" />
+              <h5 class="card-title">{{ selected.itemname }}</h5>
+              <p class="card-text"> {{ selected.itemname }} - ${{ selected.Price }}</p>
+              
+            </div>
+           
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+    
+    <div><h1>The Total Price of the Items is : {{total}}</h1>
+        <a class="btn btn-primary"  routerLink="/restaurant/checkout">Submit</a>
+    </div>

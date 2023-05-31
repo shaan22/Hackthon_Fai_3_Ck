@@ -1,0 +1,9 @@
+.row{
+    display: inline-block;
+    width: 100%;
+    margin: 20px;
+}
+
+.container{
+    display: inline-block;
+}
